@@ -1,4 +1,4 @@
-body{
+body {
   background-color: rgb(12, 21, 80);
 }
 .flip-card {
@@ -47,7 +47,7 @@ body{
 }
 .flip-card-back a {
   margin-bottom: 20px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 20px;
   border: 1px solid rgb(224, 16, 16);
   background-color: black;
@@ -84,12 +84,14 @@ body{
   margin-bottom: 20px;
 }
 .copy-items-conteiner {
-  background: rgb(16, 22, 64);
-  background: linear-gradient(
-    13deg,
-    rgba(16, 22, 64, 1) 0%,
-    rgba(132, 15, 0, 1) 56.00000000000001%
+  background: rgb(125, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(125, 0, 0, 1) 25%,
+    rgba(17, 0, 0, 1) 100%,
+    rgba(57, 53, 52, 1) 100%
   );
+
   width: 100%;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -104,12 +106,15 @@ body{
   margin-left: 10px;
 }
 
-.section-header{
-  background: rgb(16, 22, 64);
-  background: linear-gradient(
-    13deg,
-    rgba(16, 22, 64, 1) 0%,
-    rgba(132, 15, 0, 1) 56.00000000000001%
+.section-header {
+  background: rgb(125, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(125, 0, 0, 1) 25%,
+    rgba(17, 0, 0, 1) 100%,
+    rgba(57, 53, 52, 1) 100%
   );
   width: 100%;
+  text-align: center;
+  padding: 5px;
 }
