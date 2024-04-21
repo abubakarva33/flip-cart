@@ -127,10 +127,9 @@ body {
   text-align: center;
 }
 .navItems {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
 }
 .navItems span {
   font-size: 17px;
@@ -159,4 +158,13 @@ body {
 .service-title {
   margin: 0;
   color: red;
+}
+
+@media only screen and (max-width: 380px) {
+  .navItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
