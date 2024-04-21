@@ -11,13 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error('Unable to copy: ', err);
       });
     }
-  
-    var copyItems = document.querySelectorAll(".copyitem");
-    copyItems.forEach(function(item) {
-      item.addEventListener("click", function() {
-        var copyText = this.textContent;
-        copyTextAndShowMessage(copyText, this);
+
+    var copyIcons = document.querySelectorAll(".copyicon");
+    copyIcons.forEach(function(icon) {
+      icon.addEventListener("click", function() {
+        var copyText = this.previousElementSibling.textContent;
+        copyTextAndShowMessage(copyText, this.previousElementSibling);
       });
     });
-  });
-  
+});
