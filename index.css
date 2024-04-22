@@ -21,10 +21,6 @@ body {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -37,6 +33,7 @@ body {
   justify-content: space-between;
   border-radius: 10px;
 }
+
 .flip-card-front button {
   margin-bottom: 10px;
   padding: 7px 10px;
@@ -60,6 +57,7 @@ body {
   font-size: 17px;
   color: white;
 }
+
 .flip-card-front {
   width: 100%;
   background-color: rgb(151, 151, 151);
@@ -71,6 +69,12 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
 
 .card-container {
   max-width: 400px;
